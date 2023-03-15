@@ -19,8 +19,6 @@
 	}
 </style></head>
 
-
-
 <body>
 	<h1>Fisher Reese builds a delaying queue</h1>
 	<input type="text" id="words">
@@ -34,19 +32,37 @@
 		<button onclick="makeNewDiv()">Add Value</button>
 		<button onclick="get()">Get</button>
 		<button onclick="delay()">Delay</button>	
-	
 </body>
+
 <script>
 	function makeNewDiv(){
 		/* make the div and its text */
 		let element = document.createElement("div")
-		element.innerHTML = "an item after 3"
-		element.style.color = "orange"
+		element.innerHTML = document.getElementById("words").value
+		element.classList.add("delayQ")
 
 		/* add it to the container */
 		let container = document.getElementById('target')
 		container.appendChild(element)
 		
+	}
+
+	//removes the first element in the array with className delayQ
+	function get(){
+		let queueItems = document.getElementsByClassName("delayQ")
+		if(queueItems.length > 0){
+			queueItems[0].remove()
+		}
+	}
+
+	//This function removes the element from the front and puts it to the back
+	function delay(){
+		let queueItems = Array.from(document.getElementsByClassName("delayQ"))
+		if(queueItems.length > 1){
+			let removedItem = queueItems.shift()
+			let container = document.getElementById("target")
+			container.appendChild(removedItem)
+		}
 	}
 </script>
 </html>	
