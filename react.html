@@ -21,7 +21,7 @@
 
   <button type="button"
   class="btn btn-primary"
-  onclick="StartTime()">
+  onclick="startTime()">
   Start Timer</button>
   <button type="button"
   class="btn btn-primary"
@@ -29,12 +29,37 @@
   React</button>
 
   <script> 
+  //variables
   var reactTime = undefined
+  var endTime = undefined
+
+  //variables to output to two difs for the counter time and target. 
+  outCounter = document.getElementById("counter")
+  outTarget = document.getElementById("target")
+
+  //function to record time and output how fast players reaction was
   function recordTime(){
     reactTime = Date.now()
     console.log(reactTime)
+    outTarget.innerHTML = "Time was " + (reactTime - endTime)
 
   }
+
+  //function to start timer
+  function startTime(){
+    endTime = Date.now()
+    for(let i=0; i < 9; i++){
+      setTimeout(function(){
+        outCounter.innerHTML = i;
+      }, ((8-i)*1000))
+    }
+    setTimeout(function(){
+      if(reactTime == undefined){
+        outTarget.innerHTML = "Too Slow"
+      }
+    }, 8000)
+  }
+
   </script>
 
 </body>
