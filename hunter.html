@@ -4,8 +4,8 @@
     /* Three image containers (use 25% for four, and 50% for two, etc) */
     .column {
         float: left;
-        width: 9%;
-        padding: 5px;
+        width: 12%;
+        padding: 2px;
     }
     /* Clear floats after image containers */
     .row::after {
@@ -29,81 +29,188 @@
         <p style="color: orange; font-size:x-large; text-align: center; -webkit-text-stroke: 1px black;">Click on the bushes to search for the mouse, beware the cat</p>
         <p id="bushes" style=" font-size: large; font-weight: bold;">Number of bushes checked is zero </p>
         <p id="penalty" style="font-size:large; font-weight: bold;">Penalty is zero</p>
-        <p style="color:black; font-size: large; font-weight: bold;">Click for help</p>
+        <input type="button" onclick="help()" value="Click for help">
         <p id="help" style="color: red; font-size:large; font-weight: bold;">Help report</p>
         <div class="center-screen">
             <div class="column">
-              <img src="images/bushes.jpg" alt="Snow" style="width:100%;">
+              <img id="0" src="images/bushes.jpg" alt="Snow" style="width:100%;" onclick="check(0)">
               <div class ="row">
-                <img src="images/bushes.jpg" alt="Snow" style="width:100%;">
+                <img id="6"src="images/bushes.jpg" alt="Snow" style="width:100%;" onclick="check(6)">
               </div>
               <div class ="row">
-                <img src="images/bushes.jpg" alt="Snow" style="width:100%;">
+                <img id="12"src="images/bushes.jpg" alt="Snow" style="width:100%;" onclick="check(12)">
               </div>
               <div class ="row">
-                <img src="images/bushes.jpg" alt="Snow" style="width:100%;">
+                <img id="18"src="images/bushes.jpg" alt="Snow" style="width:100%;" onclick="check(18)">
               </div>
             </div>
             <div class="column">
-                <img src="images/bushes.jpg" alt="Snow" style="width:100%;">
+                <img id="1"src="images/bushes.jpg" alt="Snow" style="width:100%;" onclick="check(1)">
                 <div class ="row">
-                    <img src="images/bushes.jpg" alt="Snow" style="width:100%;">
+                    <img id="7"src="images/bushes.jpg" alt="Snow" style="width:100%;" onclick="check(7)">
                   </div>
                   <div class ="row">
-                    <img src="images/bushes.jpg" alt="Snow" style="width:100%;">
+                    <img id="13"src="images/bushes.jpg" alt="Snow" style="width:100%;" onclick="check(13)">
                   </div>
                   <div class ="row">
-                    <img src="images/bushes.jpg" alt="Snow" style="width:100%;">
+                    <img id="19"src="images/bushes.jpg" alt="Snow" style="width:100%;" onclick="check(19)">
                   </div>
             </div>
             <div class="column">
-                <img src="images/bushes.jpg" alt="Snow" style="width:100%;">
+                <img id="2"src="images/bushes.jpg" alt="Snow" style="width:100%;" onclick="check(2)">
                 <div class ="row">
-                    <img src="images/bushes.jpg" alt="Snow" style="width:100%;">
+                    <img id="8"src="images/bushes.jpg" alt="Snow" style="width:100%;" onclick="check(8)">
                   </div>
                   <div class ="row">
-                    <img src="images/bushes.jpg" alt="Snow" style="width:100%;">
+                    <img id="14"src="images/bushes.jpg" alt="Snow" style="width:100%;" onclick="check(14)">
                   </div>
                   <div class ="row">
-                    <img src="images/bushes.jpg" alt="Snow" style="width:100%;">
+                    <img id="20"src="images/bushes.jpg" alt="Snow" style="width:100%;" onclick="check(20)">
                   </div>
             </div>
             <div class="column">
-                <img src="images/bushes.jpg" alt="Snow" style="width:100%;">
+                <img id="3"src="images/bushes.jpg" alt="Snow" style="width:100%;" onclick="check(3)">
                 <div class ="row">
-                    <img src="images/bushes.jpg" alt="Snow" style="width:100%;">
+                    <img id="9"src="images/bushes.jpg" alt="Snow" style="width:100%;" onclick="check(9)">
                   </div>
                   <div class ="row">
-                    <img src="images/bushes.jpg" alt="Snow" style="width:100%;">
+                    <img id="15"src="images/bushes.jpg" alt="Snow" style="width:100%;" onclick="check(15)">
                   </div>
                   <div class ="row">
-                    <img src="images/bushes.jpg" alt="Snow" style="width:100%;">
+                    <img id="21"src="images/bushes.jpg" alt="Snow" style="width:100%;" onclick="check(21)">
                   </div>
           </div>
           <div class="column">
-            <img src="images/bushes.jpg" alt="Snow" style="width:100%;">
+            <img id="4"src="images/bushes.jpg" alt="Snow" style="width:100%;" onclick="check(4)">
             <div class ="row">
-                <img src="images/bushes.jpg" alt="Snow" style="width:100%;">
+                <img id="10"src="images/bushes.jpg" alt="Snow" style="width:100%;" onclick="check(10)">
               </div>
               <div class ="row">
-                <img src="images/bushes.jpg" alt="Snow" style="width:100%;">
+                <img id="16"src="images/bushes.jpg" alt="Snow" style="width:100%;" onclick="check(16)">
               </div>
               <div class ="row">
-                <img src="images/bushes.jpg" alt="Snow" style="width:100%;">
+                <img id="22"src="images/bushes.jpg" alt="Snow" style="width:100%;" onclick="check(22)">
               </div>
       </div>
       <div class="column">
-        <img src="images/bushes.jpg" alt="Snow" style="width:100%;">
+        <img id="5"src="images/bushes.jpg" alt="Snow" style="width:100%;" onclick="check(5)">
         <div class ="row">
-            <img src="images/bushes.jpg" alt="Snow" style="width:100%;">
+            <img id="11"src="images/bushes.jpg" alt="Snow" style="width:100%;" onclick="check(11)">
           </div>
           <div class ="row">
-            <img src="images/bushes.jpg" alt="Snow" style="width:100%;">
+            <img id="17"src="images/bushes.jpg" alt="Snow" style="width:100%;" onclick="check(17)">
           </div>
           <div class ="row">
-            <img src="images/bushes.jpg" alt="Snow" style="width:100%;">
+            <img id="23"src="images/bushes.jpg" alt="Snow" style="width:100%;" onclick="check(23)">
           </div>
   </div>
+
+  <script>
+    //Array of ids
+    var ids = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", 
+              "16", "17", "18", "19", "20", "21", "22", "23"];
+
+    //Variables 
+    var checkCount = 0;
+    var penalty = 0;
+    var lastCheck = 0;
+    var mouseLocation = 13;
+    var catLocation = 21;
+    var gameOver = false;
+
+    //variables to ouput answers
+    outBushes = document.getElementById("bushes");
+    outPenalty = document.getElementById("penalty");
+    outHelp = document.getElementById("help");
+
+    //function to change source image to either grass, cat, mouse depending on location of picture pressed
+    function check(position){
+      if(gameOver == false){
+
+        //variables 
+        var orgImage = document.getElementById(position);
+        checkCount += 1;
+        penalty += 1;
+
+        //if function for mouse
+        if(position === 13){
+          orgImage.src = "images/mouse.jpg";
+          gameOver = true;
+          penalty -= 3;
+        }
+
+        //else if for cat
+        else if(position === 21){
+          orgImage.src = "images/tiger.jpg";
+          gameOver = true;
+          penalty += 4;
+        }
+        //else for other other spaces to have image changed to grass
+        else{
+          orgImage.src = "images/grass.jpg";
+        }
+
+        //output changes to bushes checked and penalty count
+        outBushes.innerHTML = "Number of Bushes checked is " + checkCount;
+        outPenalty.innerHTML = "Penalty is " + penalty;
+
+        //changed the position pressed to lastcheck
+        lastCheck = position;
+      }
+    }
+
+    //function that is called when click for help button is pressed 
+    function help(){
+
+      //variable where the image that was clicked is located 
+      var row = rowCalculation(lastCheck / 4)
+      var column = (lastCheck % 6) + 1
+
+      //variables to find where on the game board the cat is 
+      let catRow = rowCalculation(catLocation/4);
+      let catColumn = (catLocation % 6) + 1
+
+      //variables to find where on the game board the cat is 
+      let mouseRow = rowCalculation(mouseLocation/4);
+      let mouseColumn = (mouseLocation % 6) + 1
+
+
+      //function to calculate which row the images are in
+      function rowCalculation(row){
+      if( row == 0 || row == 0.25 || row == .5 || row == .75 || row == 1.00 || row == 1.25){
+        return 1;
+      }
+      else if(row == 1.5 || row == 1.75 || row == 2.0 || row == 2.25 || row == 2.50 || row == 2.75){
+        return 2;
+      }
+      else if(row == 3.0 || row == 3.25 || row == 3.50 || row == 3.75 || row == 4.0 || row == 4.25){
+        return 3;
+      }
+      else if(row == 4.5 || row == 4.75 || row == 5.0 || row == 5.25 || row == 5.50 || row == 5.75){
+        return 4;
+      }
+    }
+
+    //if function to say when image pressed is within 1 row and column of cat output meow in help report 
+    if(Math.abs(row - catRow) <= 1 && Math.abs(column - catColumn) <= 1){
+      outHelp.innerHTML = "Meow"
+    }
+
+    //else if function to say when image pressed is within 1 row and column of mouse output squeek in help report 
+    else if(Math.abs(row - mouseRow) <= 1 && Math.abs(column - mouseColumn) <= 1){
+      outHelp.innerHTML = "Squeek"
+    }
+
+    //else statement when the image pressed is not within 1 row and column of either mouse or cat 
+    else{
+      outHelp.innerHTML = "Sorry, no help available"
+    }
+
+    //when help button is pressed penalty is raised by 2 and outputted 
+    penalty += 2
+    outPenalty.innerHTML = "Penalty is " + penalty;
+  }
+  </script>
 
 
     </body>
